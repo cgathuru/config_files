@@ -1,0 +1,24 @@
+set from = "charlesgathuru@gmail.com"
+set realname = "Charles Gathuru"
+set imap_user = "charlesgathuru@gmail.com"
+set imap_pass = "mvticfhebfjpdrdz"
+set folder = "imaps://imap.gmail.com:993"
+set spoolfile = "+INBOX"
+set postponed ="+[Gmail]/Drafts"
+set header_cache =~/.mutt/cache/headers
+set message_cachedir =~/.mutt/cache/bodies
+set certificate_file =~/.mutt/certificates
+set smtp_url = "smtp://charlesgathuru@smtp.gmail.com:587/"
+set ssl_force_tls = yes
+set ssl_starttls = yes
+set smtp_pass = $imap_pass
+set move = no 
+set imap_keepalive = 300
+set mailcap_path = ~/.mutt/mailcap
+auto_view text/html
+source ~/.mutt/colors.zenburn
+## GooBook
+set query_command="goobook query '%s'"
+macro index,pager a "<pipe-message>goobook add<return>" "add sender to google contacts"
+bind editor <Tab> complete-query
+#mvticfhebfjpdrdz
